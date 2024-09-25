@@ -1,0 +1,55 @@
+
+.container {
+    padding: 20px;
+    text-align: center;
+  }
+  .heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ebe5e5;
+    margin-bottom: 20px;
+  }
+  .categoryList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .categoryButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .categoryButton:hover {
+    background-color: #444;
+  }
+  
+  .cardGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    
+    width:90vw ;
+    margin-left: 5vw;
+  }
+  
+  @media (min-width: 768px) {
+    .cardGrid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .cardGrid {
+      grid-template-columns: repeat(3, 1fr); 
+    }
+  }
+  
